@@ -1,0 +1,1021 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Couture';
+    src: url('../css/font/couture-bld.otf')
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* Safe Area */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+}
+/* 상단 스크롤 버튼 */
+.btn_goTop {
+    display:none;
+	position:fixed;
+	bottom:30px;
+	right:30px;
+	z-index:999;
+	border:2px solid #d5011a;
+	outline:none;
+	background-color:#d5011a;
+	color:#fff;
+	cursor:pointer;
+	padding:15px 20px;
+	border-radius:50%;
+}
+.btn_goTop:hover {
+    background-color: #000;
+    color: #fff;    
+    border:2px solid #000;
+}
+/* Header */
+header {        
+    height: 700px;
+    /* padding-top: 24px;     */
+    background-image: url('../images/top_pic3.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+header .top_pic {
+    background-color: #000;    
+    height: 100px;    
+}
+/* Logo, GNB */
+
+header .logo {
+    margin-top: -65px;
+    width: 110px;    
+    /* 플롯 */
+    float: left;
+}
+header nav {
+    padding-left: 250px;        
+    float: right; 
+    margin-right: -50px;   
+}
+
+header .gnb {        
+    color: #fff;
+    font-weight: 400; 
+    background-color: #fff;   
+    margin-top: 20px;        
+}
+header .gnb li {    
+    margin-top: 24px;
+    margin-right: 40px;               
+    /* 플롯 */
+    float: left;
+    position: relative;
+    margin-bottom: 10px;    
+}
+
+header .gnb li a:hover {    
+    color: #d5011a;
+}
+/* header .gnb li:hover .gnb_sub{
+    display: block;
+} */
+header .gnb_sub {    
+    display: none;
+    top:100%;
+    position: absolute;
+    left:-10px;                 
+    background-color: #000;      
+    width: 250px;
+}
+header .gnb_sub li {
+    width: 100%;
+    padding: 5px 10px;    
+}
+
+/* Search Btn */
+header .search {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;              
+    /* 플롯 */
+    float: right;         
+}
+header .search a i:first-child {
+    margin-right: 10px;
+}
+.search a:hover {
+    color: #d5011a;    
+}
+/* ImageText Deco */
+header .img_deco {
+    padding-left: 20px;
+}
+header .img_deco h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 160px;
+    line-height: 72px;
+}
+header .img_deco p {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;    
+}
+header .img_deco button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    margin-top: 80px;
+}
+header .img_deco button a {
+    font-size: 14px;
+    font-weight: 600;
+}
+header .img_deco button:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+/* Section CardBox */
+.card_box {    
+    background-color: #dcdcdc;
+}
+/* 3단 CardBox */
+.card_box .card_view {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    margin-right: 40px;
+    /* 플롯 */
+    float: left;
+    /* 포지션 3단 CardBox 겹치기 */
+    position: relative;
+    left: 0;
+    top: -80px;
+    z-index: 1;    
+    text-align: center;        
+}
+.card_view .card_info {
+    margin-top: 30px;       
+}
+.card_view .card_info .info {
+    margin-bottom: 20px;
+    color: #616161;
+}
+.card_view .card_info p {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card_info .info_btn button {    
+    width: 150px;
+    height: 50px;
+    line-height: 48px;
+    margin-left: 20px;
+    background-color: #dcdcdc;  
+    display: block;
+}
+.card_info .info_btn a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner_btn button:hover {
+    color: #fff;    
+    text-decoration: underline;
+    transition: all 0.3s;
+    background-color: #000;
+}
+.card_view:hover h2:last-child {    
+    text-decoration: underline;    
+}
+.card_view img {
+    width: 400px;
+    height: 300px;
+}
+.card_view i {          
+    color: #fff;
+    display: hidden;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 0;
+}
+.card_view img:hover h2 {
+    display: block;
+    color: #000;
+    cursor: pointer;        
+}
+.card_view:hover {
+    border-bottom: 8px solid #000;
+    transition: linear 0.3s;    
+}
+.card_view:not(:hover) {
+    transition: linear 1s;    
+}
+.card_view:hover i {    
+    display: block;
+    color: black;
+    cursor: pointer;    
+    transition: 1s ease-out;    
+}
+.card_view:not(:hover) i{
+    transition: 1.2s ease-out;
+}
+.card_view:hover img {
+    transform: scale(1.1);
+    transition: 1s ease-out;    
+}
+.card_view:not(:hover) img {
+    transform: scale(1.0);
+    transition: 1s ease-out;
+}
+.card_view .info_btn button:hover {
+    text-decoration: underline;    
+}
+/* CardBox Text */
+.card_box_info {    
+    padding-bottom: 60px;
+}
+.card_box_info h2 {
+    font-size: 12px;
+    color: #807f7f;
+    font-weight: 400;
+    /* 플롯 */
+    float: left;
+}
+.card_box_info h2>span {
+    color: #373636;
+    font-weight: 500;
+}
+.card_box_info p {
+    font-size: 18px;
+    color: #808080;
+    font-weight: 600;    
+    /* 플롯 */
+    float: right;
+}
+.card_box_info p:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Section ABOUTUS */
+.about_us {
+    padding: 100px 0 140px;
+    width: 1920px;    
+    height: auto;
+    background: #000;
+    background-position: left top;
+    color: #fff;    
+}
+
+.about_us .about_us_text {
+    color:#807f7f;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 2;
+    letter-spacing: 1.5;
+}
+.about_us .line {
+    width: 110px;
+    height: 2px;
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 60px;
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+
+.about_us_tab {
+    margin-top: 60px;   
+    float: left;        
+}
+.about_us_tab h1 {
+    font-size: 36px;
+    font-weight: 800;  
+    margin-bottom: 40px;     
+}
+.list li.is_on a.btn {
+    color: #fff;
+}
+.list li.active a.btn {
+  color: #d5011a;
+}
+.about_us_tab nav ul {
+    display: flex;
+    justify-content: flex-start;        
+}
+.about_us_tab nav ul li {
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about_us_tab .list li a {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+.about_us_tab .list .btn:hover {
+    color: #d5011a;
+}
+
+.about_us_tab .cont_area {
+    width: 600px;
+}
+.about_us_tab > .contarea {
+    display: none;
+}
+.dotline {
+    margin-top: 20px;    
+    width: 600px;
+    border-bottom: 1px solid #fff;    
+    position: relative;
+}
+.dotline .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d5011a;
+    position: absolute;
+    top: -10px;
+    display: none;               
+}
+#circle1 {    
+    left: 45px;
+}
+#circle2 {
+    left: 220px;    
+}
+#circle3 {
+    right: 165px;
+}
+
+.cont {
+    display: none;          
+    margin-top: 30px;    
+}
+.cont p {
+    font-size: 16px;        
+    color:#807f7f;
+    line-height: 1.5;
+}
+
+
+.all_about {
+    margin-top: 150px;
+    font-size: 20px;    
+    cursor: pointer;
+}
+.all_about:hover {
+    color: #d5011a;
+}
+.about_pic_box {
+    float: right;    
+    margin-top: 60px;
+}
+.about_box {
+    width: 290px;
+    height: 500px;
+    background-color: #fff;
+    float: left;
+    margin-right: 40px;     
+    position: relative;    
+}
+.about_box2 {
+    width: 290px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;    
+    float: left;        
+} 
+.about_box .image_link {
+    position: absolute;
+    margin-right: 40px;
+}
+.about_box2 .image_link {
+    position: absolute;    
+}
+.image_link {
+    display: none;
+}
+.image_link:first-child {
+    display: block;
+}
+
+
+
+
+/* Article MOV - 추가코딩 */
+.mov {
+    width: 1920px;
+    height: 500px;
+    background-color: #F0F0F0;
+    /* 포지션 위치기준값 */
+    position: relative;            
+}
+.mov .sub_name .back{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/top_pic1_1.jpg');
+    background-repeat: no-repeat;
+    /* background-position: -125% 12.5%;         */
+    /* background-position: center top; */
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;        
+}
+
+.sub_name {
+    padding-top: 60px;
+    text-align: center;
+}
+.sub_name h2 {    
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;    
+    margin-bottom: 30px;
+}
+.sub_name p {
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.sub_name .gtc {
+    margin-top: 20px;
+    color: #000;
+    font-weight: 700;          
+}
+.sub_name .gtc i {
+    color: #000;
+    font-size: 16px;
+    margin-left: 5px;    
+}
+.sub_name .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 60px;
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+.mov .video #chanel_video {
+    width: 1060px;
+    height: 560px;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);   
+    z-index: 3;     
+}
+/* 추가 플레이어 버튼 작업 */
+#chanel_btn {
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline:none;
+    z-index: 5;
+}
+#chanel_btn i {
+    font-size: 96px;
+    color: rgba(66, 66, 66, 0);
+    cursor: pointer;
+}
+#chanel_btn i:hover {
+    color: #000;    
+}
+
+
+/* Section Why */
+.why {
+    padding-top: 100px;
+    /* 포지션 홀때문에 높이값 추가 */
+    padding-top: 380px;
+    padding-bottom: 160px;
+}
+.why_content {
+    position: relative;
+}
+.why_content .box1 {
+    width: 290px;
+    height: 500px;
+    margin-right: 40px;    
+    background-image: url("../images/ring_jennie.jpg");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    float: left;    
+    position: relative;
+}
+.why_content .box1 div {
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.why_content h2 {
+    padding-left: 10px;
+}
+.why_content .box1 a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #362FD9;
+    opacity: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.why_content .box1 a:hover::before {
+    opacity: 0.7;
+}
+.why_content .box1 a:hover div {
+    opacity: 1;
+    transform: translateY(20px);
+}
+.why_content .box2 {
+    width: 290px;
+    height: 500px;
+    background-image: url("../images/ring.webp");
+    background-color: #e9e9e9;
+    background-size: cover;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    float: left;    
+    position: relative;
+}
+.why_content .box2 div {
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.why_content .box2 a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #362FD9;
+    opacity: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.why_content .box2 a:hover::before {
+    opacity: 0.7;
+}
+.why_content .box2 a:hover div {
+    opacity: 1;
+    transform: translateY(20px);
+}
+.why_content .why_article {
+    width: 600px;     
+    float: right;
+}
+.why_article h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #000;
+}
+.why_article p {
+    text-indent: 32px;
+    font-size: 16px;
+    color: #001219;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.why_article .line {
+    width: 120px;
+    height: 2px;
+    border-bottom: 2px solid #d3d3d3;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: 490px;
+}
+
+.why_article .service {           
+    margin-top: 70px;           
+}
+.why_article .service > p {
+    text-indent: 0;
+    text-align: left !important;
+    color: #000;
+    font-weight: 600;  
+    font-size: 16px;    
+}
+
+.why_article .service p:hover {
+    color: #000;
+    text-decoration: underline;    
+}
+
+/* Section FAQ */
+.faq_saying {
+    background-color: #dcdcdc;
+    padding: 40px 0 130px;
+    text-align: center;    
+    color: #000;    
+    height: 700px;
+}
+
+.faq_content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;    
+}
+.faq_search {        
+    position: relative;
+    margin-top: 30px;    
+}
+.faq_search input {
+    width: 200px;    
+    border: 1px solid #bbb;    
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.faq_search i {
+    position: absolute;
+    width: 17px;
+    top: 10px; 
+    left: 720px;
+    color: #000;
+}
+.faq_search .store {
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* FAQ_TAB_MENU */
+.faq_container {    
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #fff;
+}
+.faq_tabs {
+    width: 600px;   
+    
+}
+.faq_tabs li {
+    margin-left: 40px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 46px;        
+    /* 플롯 */
+    float: left;
+}
+.faq {
+    border-bottom: 1px solid #dcdcdc;
+    width: 590px;            
+}
+/* QNA_CONTENTS */
+.qna_contents {          
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+/* 로딩시 가리기 */
+.qna_contents .faq_list {
+    display: none;
+}
+/* 로딩시 첫번째 탭만 보이기 */
+.qna_contents .faq_list:first-child {
+    display: block;
+}
+/* 로딩시 전체 답변 가리기 */
+.qna_contents .faq_list .answer {
+    display: none;
+}
+
+/* 질문영역 */
+.faq_list .question,
+.faq_list .answer {    
+    cursor: pointer;        
+}
+.faq_list .question div i {
+    opacity: 0.6;
+    font-size: 12px;       
+    margin-right: 10px;
+}
+.faq_list .question div {            
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    line-height: 56px;
+    /* 플롯 */
+    float: left;
+    cursor: pointer;    
+    margin-right: 4px;
+}
+
+.faq_list .question i.minus {    
+    display: none;
+}
+
+.chanel {
+    font-weight: normal;
+    font-family: 'Couture';
+}
+.u_line {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.faq_list .answer {        
+    color:#000;
+    padding: 20px 0;
+    line-height: 24px;   
+    margin-left: 27px; 
+}
+.faq_list .answer div {    
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;        
+    float: left;
+    cursor: text;
+    text-align: justify;    
+}
+
+.faq_list .answer div i {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.faq_list .answer div i:hover {
+    transform: scale(1.8);
+    transition: all 0.3s;
+}
+.faq_list .answer div>span {
+    font-size: 14px;
+    font-weight: normal;
+}
+.saying {
+    float: left;
+    width: 600px;
+}
+.saying h2 {
+    margin-top: -40px;
+    margin-bottom: 20px;    
+}
+.saying img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.ambassador {    
+    padding-left: 80px;
+    padding-top: 30px;
+}
+.saying .ambassador>img {
+    float: left;    
+}
+.saying .ambassador>h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+.quote {
+    float: left;
+    padding-top: 20px;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.ambassador2 {
+    margin-top: 20px;
+    padding-left: 80px;
+}
+.ambassador2>img {
+    float: left;
+}
+.ambassador2>h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+/* Aside Banner */
+.banner {
+    background-color: #d5011a;    
+    padding: 70px 0 70px;
+}
+.phrase {        
+    color : #000;    
+    /* 플롯 */
+    float: left;
+}
+.phrase h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+.phrase .chanel {
+    color: #fff;
+}
+.banner_btn button {
+    margin-top: 20px;
+    display: block;
+    width: 150px;
+    height: 40px;    
+    border: none;
+    text-align: center;    
+    line-height: 2.5;
+    color: #000;      
+    background-color: #fff;    
+    /* 플롯 */
+    float: right;
+}
+.banner_btn a {
+    font-size: 14px;
+    font-weight: 600;
+}
+.banner_btn button:hover {
+    color: #fff;    
+    text-decoration: underline;
+    transition: all 0.3s;
+    background-color: #000;
+}
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+}
+/* Footer Logo, SNS */
+.footer .footer_logo {
+    margin-top: -80px;    
+    width: 400px;    
+}
+.footer_logo dt {
+    margin-left: -25px;
+}
+.footer_logo dd {
+    margin-top: -40px;
+    font-size: 14px;
+    color: #e1e1e1;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+.footer_logo .sns {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.footer .sns:hover {
+    transform: scale(1.8);
+    transition: all 0.3s;
+}
+/* Footer Services */
+.footer_services {
+    width: 300px;
+}
+.footer_services dt {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer_services dd {
+    font-size: 14px;
+    color: #c7c4c4;
+    font-weight: 400;
+    margin-bottom: 20px;    
+}
+.footer_services dd a:hover {
+    color: #d5011a;
+}
+/* Footer Assistance */
+.footer_assistance {
+    width: 300px;
+}
+.footer_assistance dt {
+    font-size: 20px;
+    color:#fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer_assistance dd {
+    font-size: 14px;
+    color: #c7c4c4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer_assistance dd a:hover {
+    color: #d5011a;
+}
+/* Footer About */
+
+.footer_about dt {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer_about dd {
+    font-size: 14px;
+    color: #c7c4c4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer dd a:hover {
+    color: #d5011a;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 32px;
+    clear:both;
+}
+.copyright .copyright_line {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+    font-family: 'Couture';
+}
+
+/* 플롯 */
+.footer_logo,
+.footer_services,
+.footer_assistance,
+.footer_about {
+    float: left;
+}
+
+.warning {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+
+.warning img {
+    width: 60px;
+    height: 60px;
+}
+.warning p {
+    color: #fff;
+}  
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    display: none;
+}

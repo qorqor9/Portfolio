@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mcssam">
+    <meta name="description" content="Portfolio, Mobileweb">
+    <title>현대자동차 통합계정 - 로그인</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/favicon180.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/log_in.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 페이지 JS -->
+    <script src="./js/jquery.scrollTo.min.js"></script>
+</head>
+<body>
+    <div id="curtain"></div>
+    <div class="top_line"></div>
+    <!-- 헤더 -->
+    <header class="w400">
+        <h1 class="logo"><a href="../index.html"><img src="./images/logo.png" alt="로고이미지"></a></h1>
+    </header>
+    <article>
+        <!-- 로그인 창 -->
+        <fieldset class="w400">
+            <legend><span class="logInDot"></span>이메일 로그인</legend>
+            <ul>
+                <li>
+                    <label for="log_in_id">아이디</label>
+                    <input type="text" id="log_in_id" placeholder="이메일 주소">
+                </li>
+                <li>
+                    <label for="log_in_pw">비밀번호</label>
+                    <input type="password" id="log_in_pw" placeholder="비밀번호">
+                </li>
+                <button>로그인</button>
+            </ul>
+            <div>
+                <ul class="findId">
+                    <li class="mousecursor">아이디 찾기</li>
+                    <li>|</li>
+                    <li class="mousecursor">비밀번호 초기화</li>
+                </ul>
+                <ul>
+                    <li class="mousecursor"><a href="../membership/membership.html">회원가입</a> <span class="right_tri"><i class="fa fa-caret-right" aria-hidden="true"></i></span></li>
+                </ul>
+            </div>
+            <div class="sns_exp">
+                <p>
+                    <img class="expo" src="./images/log_in.png" alt="로그인">
+                    소셜로그인을 이용한 적이 있으신가요?
+                </p>
+                <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </fieldset>
+    </article>
+    <!-- 아이디 경고창 -->
+    <aside class="problem_alert">
+        <div class="mail_alert">
+            <h2>이메일 주소가 필요합니다.</h2>
+            <p>확인</p>
+        </div>
+    </aside>
+    <!-- 비밀번호 경고창 -->
+    <aside class="problem_alert">
+        <div class="pw_alert">
+            <h2>비밀번호가 필요합니다.</h2>
+            <p>확인</p>
+        </div>
+    </aside>
+    <!-- 푸터 -->
+    <footer>
+        <div class="w400">
+            <ul>
+                <li class="mousecursor">이용약관</li>
+                <li class="logInDivider">|</li>
+                <li class="mousecursor">개인정보 처리방침</li>
+            </ul>
+        </div>
+        <p>COPYRIGHT &copy; HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!-- 로딩 메시지 -->
+    <aside class="bottom_msg">
+        현대닷컴, 블루링크에서 사용하시던 이메일/비밀번호 그대로 로그인 하세요.
+    </aside>
+<script>
+    // 로딩 메시지 스크립트
+    $('html,body').click(function(){
+        $('.bottom_msg').animate({opacity:0});
+    });
+    // 준비창 스크립트
+    $('body').append("<div class='alert'>죄송합니다. 해당 페이지는 준비중 입니다.</div>");
+    $('.findId .mousecursor,.sns_exp,footer .mousecursor').click(function(){
+        $('.alert').fadeIn()
+        $('#curtain').fadeIn()
+        setTimeout(function(){
+            $('.alert').stop().fadeOut()
+            $('#curtain').stop().fadeOut()
+        },1000)
+    });
+</script>
+<script src="./js/log_in.js"></script>
+</body>
+</html>

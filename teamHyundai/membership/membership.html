@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대 자동차 통합계정 - 가입정보입력력</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 페이지CSS -->
+   
+    <link rel="stylesheet" href="./css/membership.css">
+    <!-- 박스 슬리이더 CSS -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- 1. 제이쿼리 코어파일 -->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <!-- 2. 제이쿼리 CDN 방식이용 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- 박스 슬라이더 JS -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- 페이지 JS -->
+</head>
+<body>
+    <!-- 로고 -->
+    <div id="mbs_top">
+        <div class="mbs_logo">
+            <a href="../index.html"><img src="./images/membership_logo.png" alt="현대로고"></a>
+        </div>
+    </div>
+    <!-- 로고 -->
+
+    <!-- HEADER -->
+    <div id="mbs_info">
+        <div class="mbs_h1">
+            가입 정보 입력
+        </div>
+        <div class="mbs_p">
+            로그인 정보 및 가입 정보를 입력하세요.
+        </div>
+    </div>
+    <!-- HEADER -->
+
+    <!-- 정보입력 -->
+    <div id="mbs_step">
+        <div id="mbs_step_box">
+            <!-- 체크 -->
+            <div class="mbs_check1">
+                <img src="./images/check.png" alt="check">
+                <p>이메일 주소 중복 확인 및 인증 이메일 발송</p>
+            </div>
+
+            <div class="mbs_check1"></div>
+
+            <div class="mbs_check1">
+                <img src="./images/check.png" alt="check">
+                <p>인증 확인</p>
+            </div>
+
+            <div class="mbs_check1"></div>
+
+            <div class="mbs_check1 three">
+                <img src="./images/three.png" alt="3">
+                <p>회원 정보 입력</p>
+            </div>
+            <!-- 체크 -->
+            <!-- 회원정보입력 input -->
+            <div id="mbs_input">
+                <ul>
+                    <li>
+                        <label for="c_mail"><span></span>&nbsp;이메일 주소 </label>
+                        <input type="email" id="c_mail" placeholder="floatleft@gmail.com">
+                    </li>
+                
+                
+                    <li>
+                        <label for="c_pw"><span></span>&nbsp;비밀번호 </label>
+                        <input type="password" id="c_pw" placeholder="비밀번호 입력" style="font-size:8px;" maxlength="20">
+                        <input type="password" id="c_pw" placeholder="비밀번호 확인" style="font-size:8px;" maxlength="20" class="no_mt no_mb">
+                        <i class="fa fa-info-circle" aria-hidden="true"><span>&nbsp;&nbsp;8~20자의 영문 대/소문자, 특수문자 중 3가지 이상을 혼용하여 입력해 주세요.</spen></i>
+                    </li>
+                
+                
+                    <li>
+                        <label for="c_name"><span></span>&nbsp;이름</label>
+                        <input type="name" id="c_name" placeholder="플롯레프트">
+                    </li>
+                </ul>   
+                <button>회원가입</button>
+            </div>
+            <!-- /회원정보입력 input -->
+            <!-- 비밀번호 입력확인창 -->
+            <div id="mbs_bg">
+                <div class="mbs_confirm">
+                    <div class="mbs_h2">비밀번호를 입력해주세요.</div>
+                    <div class="mbs_p">확인</div>
+                </div>
+            </div>
+            <!-- /비밀번호 입력확인창 -->
+        </div>
+    </div>
+    <!-- /정보입력 -->
+    <!-- FOOTER -->
+    <div id="mbs_footer">
+        <a href="../login/log_in.html">로그인 페이지로 이동</a>
+        <p>COPYRIGHT &copy; HYUNDAI MOTOR COMPANY. ALL RIGHT RESERVED.</p>
+    </div>
+    <!-- /FOOTER -->
+<script src="./js/membership.js"></script>
+</body>
+</html>

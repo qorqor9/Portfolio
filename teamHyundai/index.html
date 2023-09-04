@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="floatleft">
+    <meta name="description" content="Portfolio">
+    <title>현대자동차 - 현대닷컴 | 대한민국 대표 자동차회사 Hyundai.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/favicon180.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/main_header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 페이지 JS -->
+    <script src="./js/jquery.scrollTo.min.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <div id="curtain"></div>
+    <article class="main_slider">
+    </article>
+    <article class="mainModel w1400">
+    </article>
+    <article class="electronicCar w1640">
+    </article>
+    <article class="myHyundai w1400">
+    </article>
+    <article class="hyundaiShop w1400">
+    </article>
+    <article class="brand w1400">
+    </article>
+    <article class="event w1640">
+    </article>
+    <article class="hyundai_news w1400">
+    </article>
+    <aside class="sub_aside">
+    </aside>
+    <aside class="chatbot"><img src="./images/slideimg/icon-chat-pc.png" alt="챗봇"></aside>
+    <footer class="footer">
+    </footer>
+<script src="./js/main.js"></script>
+<script src="./js/include.js"></script>
+<script>
+    $('body').append("<div class='alert'>죄송합니다. 해당 페이지는 준비중 입니다.</div>");
+    $('.chatbot').click(function(){
+        $('.alert').fadeIn()
+        $('#curtain').fadeIn()
+        setTimeout(function(){
+            $('.alert').stop().fadeOut()
+            $('#curtain').stop().fadeOut()
+        },1000)
+    });
+</script>
+</body>
+</html>

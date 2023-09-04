@@ -1,0 +1,1073 @@
+:root {
+    --badgeColor: #007FA8;
+    --subTitleColor: #666;
+    --buttonColor: #002C5f;
+    --color: #012D5E;
+}
+
+html {
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+li {
+    cursor: inherit;
+}
+
+
+
+/* 스크롤 게이지바 */
+.progress-container {
+    position: fixed;
+    top: 0;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    z-index: 9999;
+}
+
+.progress-container .progress-bar {
+    width: 0;
+    height: 8px;
+    background: var(--badgeColor);
+}
+
+/* 세이프 area */
+.w1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.w1640 {
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+
+/* 메인 모델 영역 */
+.mainModel {
+    width: 100%;
+    text-align: center;
+    padding-top: 140px;
+}
+
+.mainModel h2 {
+    font-weight: bold;
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+main {
+    padding-top: 140px;
+    text-align: center;
+}
+
+main .mainTitle h2 {
+    font-weight: 700;
+
+}
+
+main .mainTitle p {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #666;
+}
+
+
+
+.modelImgBox {
+    position: relative;
+    width: 560px;
+    width: 40%;
+    height: 420px;
+}
+
+
+
+.modelGalleryBox {
+    display: flex;
+    justify-content: center;
+}
+
+
+.modelGallery {
+    margin-top: 51px;
+    position: relative;
+    display: none;
+}
+
+.modelGalleryRight {
+    position: relative;
+    margin-left: 60px;
+}
+
+.ageTab {
+    position: absolute;
+    left: 985px;
+    top: 1250px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.ageTab li {
+    float: left;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.ageTab li::before {
+    content: " | ";
+    color: #000;
+}
+
+.ageTab li:first-child::before {
+    content: "";
+}
+
+.modelGalleryRight h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 64px;
+    text-align: left;
+}
+
+
+
+
+/* 로딩시 첫번째 탭만 보이기 */
+.modelGallery:first-child {
+    display: block;
+}
+
+.two-three {
+    margin-top: 104px;
+}
+
+.two-three ul {
+    display: flex;
+}
+
+.two-three ul li {
+    width: 250px !important;
+    width: 100%;
+    height: 151px;
+    margin-left: 32px;
+    font-size: 16px;
+}
+
+.two-three ul li:first-child {
+    margin-left: 0;
+}
+
+.two-three ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.two-three ul li p {
+    text-align: left;
+    font-weight: 900;
+    line-height: 2.5;
+}
+
+.modelImgBox::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "1위";
+    width: 60px;
+    height: 60px;
+    background: #007fa8;
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+/* 전기차 영역 */
+.electronicCar {
+    padding-top: 140px;
+    text-align: center;
+
+}
+
+.electronicCar h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.electric_car {
+    margin-top: 51px;
+    display: flex;
+}
+
+.electric_car_inner {
+    width: 34%;
+    height: auto;
+    text-align: left;
+    padding: 40px;
+    background-color: #f7f3f2;
+    position: relative;
+}
+
+.electric_car_info .badge {
+    width: 38px;
+    background-color: var(--badgeColor);
+    text-align: center;
+    color: #Fff;
+    font-weight: bold;
+    padding: 4px 3px;
+    font-size: 8px;
+
+}
+
+.electric_car_info h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.electric_car_info p {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 3px;
+    font-weight: 600;
+}
+
+.electric_car_info .btn_more {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--buttonColor);
+    color: #fff;
+    font-weight: bold;
+    padding-top: 13px;
+    margin-top: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.electric_car_inner .network {
+    margin-top: 160px;
+    line-height: 2;
+}
+
+.electric_car_inner .network h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.electric_car_inner .network p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.electric_car_inner .network span {
+    font-size: 16px;
+    color: var(--buttonColor);
+    font-weight: bold;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.electric_car_info::before {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 50%;
+    bottom: 1px;
+    width: 200px;
+    height: 100px;
+    background: url("../images/main/charging-station.jpg");
+}
+
+.on2 {
+    color: var(--badgeColor);
+}
+
+
+/* myHyundai 영역 */
+.myHyundai {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.myHyundai h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.myHyundai p {
+    font-size: 16px;
+    line-height: 2;
+    color: #666;
+}
+
+.slide_gallery li img {
+    width: 100%;
+}
+
+.slide_gallery li {
+    display: flex;
+}
+
+.myHyundaiSlider {
+    margin-top: 60px;
+    line-height: 2;
+}
+
+.myHyundai_item {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 32px 40px;
+    padding-bottom: 0;
+}
+
+.myHyundai_item p:last-child {
+    cursor: pointer;
+}
+
+.myHyundai_item1 {
+    float: left;
+    background-image: url("../images/main/home.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.myHyundai_item1::after {
+    position: absolute;
+    top: 40px;
+    display: block;
+    left: 50%;
+    content: "";
+    width: 1px;
+    height: calc(100% - 80px);
+    background-color: #e5e5e5;
+}
+
+.myHyundai_item2 {
+    float: right;
+    background-image: url("../images/main/garage.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
+.myHyundai_item3 {
+    float: left;
+    background-image: url("../images/main/shop.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.myHyundai_item3::after {
+    position: absolute;
+    top: 40px;
+    display: block;
+    left: 50%;
+    content: "";
+    width: 1px;
+    height: calc(100% - 80px);
+    background-color: #e5e5e5;
+}
+
+.myHyundai_item4 {
+    float: right;
+    background-image: url("../images/main/service.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
+.slide_gallery li {
+    border: 1px solid #e5e5e5;
+
+}
+
+.myHyundai h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.myHyundai p {
+    font-size: 14px;
+}
+
+.myHyundai a {
+    color: var(--color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+.slide {
+    width: 750px;
+    height: 440px;
+}
+
+.slide:nth-child(2) {
+    display: none;
+}
+
+.slide_gallery {
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+
+.slide_gallery img {
+    width: 100%;
+}
+
+
+.subprev {
+    left: 1px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.subnext {
+    right: 1px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.circle {
+    margin: 8px 0;
+    text-align: left;
+    margin-left: 355px;
+    z-index: 998;
+}
+
+.circle .subdot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.6s;
+    z-index: 99999;
+}
+
+.subdot:nth-child(1) {
+    background-color: #007FA8;
+}
+
+.subprev,
+.subnext {
+    padding: 11px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #666;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    transform: translateY(-50%);
+}
+
+.subprev:hover,
+.subnext:hover {
+    background-color: #007fa8;
+    opacity: 0.9;
+}
+
+.myHyundai_item p:nth-child(3) {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.circle .dot:hover {
+    background-color: #333;
+}
+
+.myHyundaiInner {
+    margin: 0 auto;
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myHyundaiApp {
+    margin-top: 20px;
+    padding-top: 33px;
+    padding-left: 40px;
+    text-align: left;
+    width: 288px;
+    height: 440px;
+    background-color: #f6f3f2;
+    background-image: url("../images/main/myApp.png");
+    background-repeat: no-repeat;
+    background-position-y: 300px;
+    background-position-x: 140px;
+
+}
+
+.myHyundaiApp h3 {
+    margin-bottom: 15px;
+}
+
+.myHyundaiApp p {
+    font-weight: 700;
+}
+
+.myHyundaiApp p:last-child {
+    margin-top: 50px;
+    color: var(--color);
+    cursor: pointer;
+}
+.myHyundaiApp p:last-child img {
+    margin-top: 8px;
+}
+
+/* 브랜드 영역 */
+.main_brand {
+    margin: 0 auto;
+    width: 1920px;
+    text-align: center;
+}
+
+.brand_title {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.brand_title p:first-child {
+    padding-bottom: 30px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.brand_title p:last-child {
+    font-size: 16px;
+    padding-bottom: 60px;
+    color: #666;
+}
+
+.brand_imagebox {
+    margin: 0 auto;
+    width: 1120px;
+    /* 플랙스 */
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.brand_box {
+    position: relative;
+    cursor: pointer;
+    z-index: 102;
+    overflow: hidden;
+
+}
+
+.brand_box h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.brand_box div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 103;
+    background-color: #000;
+    color: #fff;
+    opacity: 0;
+}
+
+
+.brand_box:hover img {
+    transform: scale(1.5);
+    transition: all 2s;
+    z-index: -1;
+}
+
+.brand_box:hover div {
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+}
+
+.brand_box:hover div h4,
+.brand_box:hover div p {
+    opacity: 1;
+}
+
+
+/* 현대샵 영역 */
+.hyundaiShop {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.hyundaiShop h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.hyundaiShop h2+p {
+    margin-top: 30px;
+    color: #666;
+    font-size: 16px;
+}
+
+.tip {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 51px;
+}
+
+.tip div {
+    width: 352px;
+    height: 205px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tip div:nth-child(1) {
+    background-image: url("../images/main/oil.jpg");
+}
+
+.tip div:nth-child(2) {
+    background-image: url("../images/main/sideMirror.jpg");
+}
+
+.tip div:nth-child(3) {
+    background-image: url("../images/main/hunger.jpg");
+} 
+
+.tip p {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 17px 0 5px 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+.hyundaiShopBest {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.hyundaiShopBestTitle {
+    text-align: left;
+    width: 280px;
+    height: 288px;
+    padding: 40px 30px 0 30px;
+    line-height: 2;
+    background-color: #f6f3f2;
+}
+
+.hyundaiShopBestTitle p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 700;
+}
+
+
+.hyundaiShopBestTitle p:last-child {
+    color: var(--color);
+    margin-top: 50px;
+    cursor: pointer;
+}
+.hyundaiShopBestTitle p:last-child img{
+    margin-top: 9px;
+    margin-left: 3px;
+}
+
+.hyundaiShopBestTitle h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.goods {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    cursor: pointer;
+}
+
+.goods::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "4";
+    width: 35px;
+    height: 30px;
+    background: #007fa8;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.goods:nth-child(2)::before {
+    content: "1";
+}
+
+.goods:nth-child(3)::before {
+    content: "2";
+}
+
+.goods:nth-child(4)::before {
+    content: "3";
+}
+
+
+
+.goods img {
+    width: 100%;
+    height: 100%;
+}
+
+.goods img+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.discount {
+    display: flex;
+    margin-top: 5px;
+}
+
+.discount p:nth-child(1) {
+    color: #e63312;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.discount p:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.no_style {
+    color: #000 !important;
+    font-size: 20px !important;
+}
+
+/* 이벤트영역 */
+.event {
+    padding-top: 140px;
+    text-align: center;
+}
+
+.event h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.slideContents h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event h2+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.slideTap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slideContents p {
+    color: #666;
+}
+
+.slideContents {
+    width: 30%;
+    text-align: left;
+    line-height: 2.5;
+    cursor: pointer;
+    position: relative;
+    z-index: 101;
+}
+
+.slideContents .img_box {
+    width: 100%;
+    position: relative;
+
+}
+
+.img_box img {
+    width: 100%;
+}
+
+.slideContents p:nth-child(4) {
+    font-weight: normal;
+}
+
+.eventSlide_gallery {
+    position: relative;
+}
+
+.thirdprev:hover,
+.thirdnext:hover {
+    background-color: #007fa8;
+    opacity: 1;
+    color: #fff;
+}
+
+.thirdprev,
+.thirdnext {
+    padding: 11px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #666;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    z-index: 500;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.thirdnext {
+    right: 1px;
+}
+
+.thirdprev {
+    left: 1px;
+}
+
+.thirddot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: all 0.6s;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 999;
+
+
+
+}
+
+.thirddot:nth-child(1) {
+    background-color: #007FA8;
+}
+
+.thirdcircle {
+    text-align: center;
+    z-index: 999;
+}
+
+.slideContents .eventMore {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.slideContents:hover .eventMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 103;
+}
+
+.slideContents .eventMore p {
+    color: #fff;
+    opacity: 1;
+    z-index: 999;
+}
+
+/* 현대자동차 소식 영역 */
+.hyundai_news {
+    padding: 140px 0;
+    text-align: center;
+}
+
+.hyundai_news_title p:first-child {
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 80px;
+}
+
+.hyundai_news_button {
+    /* 플랙스 */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.hyundai_news_button p {
+    font-size: 13.3296px;
+    font-weight: 500;
+    background: #f6f3f2;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 15px / 15px;
+    cursor: pointer;
+    z-index: 103;
+
+}
+
+.on3 {
+    background-color: var(--badgeColor) !important;
+    color: #fff;
+}
+
+.hyundai_news_images_list {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+.img_bg img {
+    width: 100%;
+    border-right: 1px solid#fff;
+}
+
+.hyundai_news_images_list li {
+    float: left;
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hyundai_news_images_list li::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #3f51b5;
+    opacity: 0;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.hyundai_news_images_list li:hover .img_bg img {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.hyundai_news_images_list li:hover::before {
+    opacity: 0.7;
+}
+
+.hyundai_news_images_list li:hover span {
+    opacity: 1;
+    z-index: 999;
+}
+
+.hyundai_news_images_list li:hover h3 {
+    border: 1px solid #fff;
+    z-index: 999;
+}
+
+.hyundai_news_images_list li h3 {
+    position: absolute;
+    left: 10%;
+    top: 25px;
+    color: #fff;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    z-index: 500;
+}
+
+.hyundai_news_images_list li span {
+    position: absolute;
+    left: 15%;
+    top: 37%;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.hyundai_news_images_list li span+img {
+    position: absolute;
+    width: 70%;
+    left: 16%;
+    top: 3%;
+    z-index: 1;
+
+}
+
+.hyundai_news_images_list {
+    display: none;
+    border-right: 1px solid #fff;
+
+}
+
+.hyundai_news_images_list:nth-child(1) {
+    display: block;
+}
+
+/* 페이지 준비중 */
+.alert {
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #007fa8;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    display: none;
+}

@@ -1,0 +1,262 @@
+@charset "utf-8";
+html,body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* 포지션기준값 */
+    position: relative;
+}
+
+
+/* 로고 */
+#mbs_top {
+    height: 80px;
+    border-top: 7px solid #012d5e; 
+    border-bottom: 1px solid #dddddd; 
+}
+#mbs_top .mbs_logo {
+    width: 680px;
+    height: 72px;
+    margin: 0 auto;
+    color: #012d5e;
+    padding: 0 20px;
+}
+#mbs_top .mbs_logo img {
+    width: 128px;
+    height: 19px;
+    margin-top: 28px;
+}
+
+/* HEADER */
+#mbs_info {
+    height: 100px;
+    padding: 22px 0;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+#mbs_info .mbs_h1 {
+    height: 28.8px;
+    line-height: 28.8px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #333333;
+}
+#mbs_info .mbs_p {
+    height: 16.5px;
+    font-size: 12.5px;
+    color: #666666;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+
+/* 정보입력 */
+#mbs_step {
+    height:656.25px;
+    border-bottom: 1px solid #dddddd;
+}
+/* 체크 */
+#mbs_step #mbs_step_box {
+    width: 680px;
+    height: 655.25px;
+    margin: 0 auto;
+    padding: 50px;
+}
+#mbs_step #mbs_step_box .mbs_check1 {
+    width: 592px;
+    height: 32px;
+    line-height: 25px;
+    margin-left: -2px;
+    /* 플렉스 */
+    display: flex;
+}
+#mbs_step #mbs_step_box .mbs_check1:nth-child(2),
+#mbs_step #mbs_step_box .mbs_check1:nth-child(4) {
+    height: 23px;
+    margin: 0 0 10px 7px;
+    border-left: 1px solid #bdbdbd;
+   
+}
+#mbs_step #mbs_step_box .mbs_check1 img {
+    width: 18px;
+    height: 14px;
+    margin-top: 4px;    
+}
+#mbs_step #mbs_step_box .mbs_check1 p {
+    margin-left: 9px;
+    height: 20px;
+    color: #000;
+    font-size: 14.5px;
+    font-weight: 200;
+    margin-top: -2px;
+}
+#mbs_step #mbs_step_box .three img {
+    width: 30px;
+    height: 30px;
+    margin-top: -4px;
+    margin-left: -7px;      
+}
+#mbs_step #mbs_step_box .three p {
+    margin-left: 5px;
+    margin-top: -4px;
+   
+}
+
+
+
+/* 회원정보입력 input */
+#mbs_input {
+    width: 552px;
+    height: 397.25px;
+    margin-top: -7px;
+    margin-left: 26px;
+}
+#mbs_input ul {
+    margin-bottom: 2px;  
+}
+#mbs_input ul li label {
+    height: 22px;
+    color: #666666;
+    font-size: 12.5px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+#mbs_input ul li label span {
+    content: "";
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    width: 4px;
+    height: 4px;
+    margin: 0 4px 0 0;
+    background: #999;
+}
+#mbs_input ul li input {
+    margin: 10px 0 20px;
+    width: 552px;
+    height: 40px;
+    background-color: #E9E9E9;
+}
+#mbs_input ul li i {
+    color: #023d75;
+    font-size: 11px;
+    margin: -10px 0 22px 0;
+}
+#mbs_input ul li i span {
+    font-weight: 300;
+}
+#mbs_input ul li input[type=email], 
+#mbs_input ul li input[type=name] {
+    padding: 10px;
+    background: #E9E9E9;
+    color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+}
+#mbs_input ul li input[type=password],
+#mbs_input ul li input[type=password]:nth-child(2) {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #E9E9E9;
+}
+#mbs_input ul li input[type=password] {
+    margin-bottom: 5px;
+}
+#mbs_input ul li input[type=password]:focus {
+    border: 1px solid #00a7cf;
+}
+
+
+#mbs_input button {
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 76px;
+    padding: 0 16px;
+    background-color: #3387BD;
+    color: #fff;  
+    letter-spacing: -1px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+#mbs_input button:hover { 
+    background-color: #012a85;   
+}
+
+/* 비밀번호 입력확인창 */
+#mbs_bg {
+    display: none;
+}
+/* 가상 셀로판지 */
+#mbs_bg::after { 
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: black;
+    opacity: 0.7;
+}
+.mbs_confirm {
+    width: 175.64px;
+    text-align: center;
+    /* 포지션 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.mbs_confirm .mbs_h2 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 73.5px; 
+    background: #fff;
+    padding: 24px 15px 30px;
+    font-size: 13px;
+    color: #686868;
+}
+.mbs_confirm .mbs_p {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+    background: #3387bd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500px;
+    padding: 15px 16px;
+    cursor: pointer;
+}
+.mbs_confirm .mbs_p:hover {
+    background: #012a85;   
+}
+
+
+
+
+/* FOOTER */
+#mbs_footer {
+    height: 72px;
+    text-align: center;
+    padding-top: 28px;
+}
+#mbs_footer a {
+    height: 59px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #006ca4;
+    border-bottom: 1px solid #006ca4;
+    padding-bottom: 1px;
+}
+#mbs_footer p {
+    margin-top: 14px;
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    color: #666666;
+    
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hrlee">
+    <meta name="description" content="Portfolio, RWD Template">
+    <title>Blizzard Portfolio, RWD Template</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./favicon/blizzardFavi.ico">
+    <link rel="apple-touch-icon=precomposed" href="./favicon/blizzardFavi.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <script src="https://kit.fontawesome.com/2181e7fb1a.js" crossorigin="anonymous"></script>
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">    
+    <link rel="stylesheet" href="./css/blizzard_2.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- 페이지 JS -->
+
+    <!-- 박스 슬라이더 -->
+    <style>
+        article {
+            max-width: 1920px;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        article #gallery_wrap {
+            max-width: 1920px;  
+            width: 92%;          
+        }
+
+        article #gallery_wrap ul li img {
+            width: 100%;
+        }
+    </style>
+    <!-- /박스 슬라이더 -->
+    <script>
+        $(document).ready(function () {
+            $(".menu_toggle_btn").click(function () {
+                $(".gnb").stop().toggle();
+            });
+        });
+        $(function () {
+            $(".slide_gallery").bxSlider({
+                mode: "horizontal",
+                pager: true,
+                slideWidth: 1920,
+                auto: true,
+                pause: 2000,
+                autoStart: true,
+                autoDirection: 'next',
+                stopAutoOnClick: false,
+                autoHover: false,
+                autoDelay: 0,
+                autoSlideForOnePage: false,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header class="header cf container">
+            <!-- Logo -->
+            <!-- Hamburger Toggle -->
+            <span class="menu_toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <!-- /Hamburger Toggle -->
+            <h1 class="logo"><a href="./index.html" class="ready"><img src="./images/blizz_logo.png" alt="블리자드로고"></a></h1>
+            <!-- /Logo -->
+            <!-- GNB -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="javascript:void(0)">HOME</a></li>
+                    <li><a href="javascript:void(0)">공지사항</a></li>
+                    <li><a href="javascript:void(0)">이벤트</a></li>
+                    <li><a href="javascript:void(0)">커뮤니티</a></li>
+                    <li><a href="javascript:void(0)">고객지원</a></li>
+                    <li><a href="javascript:void(0)">내 정보</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="gnb_right">
+                    <li>
+                        <a href="javascript:void(0)"><i class="far fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /GNB -->
+        </header>
+        <a href="javascript:void(0)" class="btn_goTop ready"><i class="fas fa-angle-double-up"></i></a>
+        <!-- /1. Header -->
+
+        <!-- 2.Slider 원본 -->
+        <!-- 2-2. 슬라이드 제이쿼리 플러그인 작업 -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li><img src="./img_bxSlider/bximg1.png" alt="슬라이드01"></li>
+                    <li><img src="./img_bxSlider/bximg2.png" alt="슬라이드02"></li>
+                    <li><img src="./img_bxSlider/bximg3.png" alt="슬라이드03"></li>
+                    <li><img src="./img_bxSlider/bximg4.png" alt="슬라이드04"></li>
+                    <li><img src="./img_bxSlider/bximg5.png" alt="슬라이드05"></li>
+                </ul>
+            </div>
+        </article>
+        <!-- /2-2. 슬라이드 제이쿼리 플러그인 작업 -->
+        <!-- /2.Slider -->
+
+        <!-- 3. Contents -->
+        <main role="main">
+            <section class="content">
+                <!-- 3-1. Display -->
+                <section class="display_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">About&nbsp;Blizzard</h2>
+                        <p class="desc">
+                            "We embrace our core values every day so that we can continue creating <br>
+                            epic entertainment experiences for all our players"
+                        </p>
+                    </div>
+                </section>
+                <!-- /3-1. Display -->
+
+                <!-- 3-2. Promotion -->
+                <section class="promotion_section container">
+                    <h2>
+                        <ul class="promotion_list cf">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./images/logo/diablo-IV.webp" alt="홈 아이콘">
+                                    <h3>Diablo4</h3>
+                                    <p>
+                                        Play Your Way, Mkae Sanctuary Yours <br>
+                                        Craft an experience uniquely your own.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./images/logo/world-of-warcraft.webp" alt="회원정보 아이콘">
+                                    <h3>WoW</h3>
+                                    <p>
+                                        Begin Your Adventure <br>
+                                        Start your journey through Azeroth here and try WoW for free!
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./images/logo/overwatch-2.webp" alt="작업물 아이콘">
+                                    <h3>OverWatch 2</h3>
+                                    <p>
+                                        Embark on A Mythic Adventure <br>
+                                        Join Tracer and her friends on a fantasy-themed role-playing journey.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./images/logo/hearthstone.webp" alt="글쓰기 아이콘">
+                                    <h3>Hearthstone</h3>
+                                    <p>
+                                        Deceptively Simple, Insansely Fun <br>
+                                        Welcome to Hearthstone, the strategy cart game that's easy to learn
+                                        but impossible to put down!
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </h2>
+                </section>
+                <!-- /3-2. Promotion -->
+
+                <hr class="divider">
+
+                <!-- 3-3. Work -->
+                <section class="work_section">
+                    <div>
+                        <h2 class="sec_title container">추천 게임</h2>
+                        <ul class="work_list cf">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>디아블로&nbsp;IV</h3>
+                                        <span>액션&nbsp;RPG</span>
+                                    </div>
+                                    <img src="./images/diablo4.jpg" width="300" height="400" alt="D4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>월드 오브 워크래프트</h3>
+                                        <span>MMORPG</span>
+                                    </div>
+                                    <img class="bchg" src="./images/df2.jpg" width="300" height="400" alt="와우">
+                                    <img class="achg" src="./images/wow-dragonflight.jpg" width="300" height="400" alt="와우">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>오버워치 2</h3>
+                                        <span>팀 기반 액션 게임</span>
+                                    </div>
+                                    <img src="./images/overwatch2.jpg" width="300" height="400" alt="옵치2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>월드 오브 워크래프트 클래식</h3>
+                                        <span>MMORPG</span>
+                                    </div>
+                                    <img src="./images/WoWClassic.jpg" width="300" height="400" alt="워크클래식">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>하스스톤</h3>
+                                        <span>전략 카드 게임</span>
+                                    </div>
+                                    <img src="./images/hearthstone.jpg" width="300" height="400" alt="하스스톤">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>디아블로 이모탈</h3>
+                                        <span>액션 RPG</span>
+                                    </div>
+                                    <img src="./images/diablo-immortal.jpg" width="300" height="400" alt="디아 이모탈">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>디아블로 II: 레저렉션</h3>
+                                        <span>액션 RPG</span>
+                                    </div>
+                                    <img src="./images/d2.jpg" width="300" height="400" alt="디아2 레저렉션">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div>
+                                        <h3>디아블로 III</h3>
+                                        <span>액션 RPG</span>
+                                    </div>
+                                    <img src="./images/diablo3.jpg" width="300" height="400" alt="포트폴리오8">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-3. Work -->
+
+                <hr class="m_divider">
+
+                <!-- 3-4. Blog -->
+                <section class="blog_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">NEWS</h2>
+                        <ul class="blog_list cf">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="img_wrap">
+                                        <img src="./images/promo.png" width="268" height="268" alt="블로그 이미지01">
+                                    </div>
+                                </a>
+                                <time datetime="2022-01-25">JAN 25, 2022</time>
+                                <a href="javascript:void(0)">
+                                    <h3>
+                                        블리자드 인사이드 <br>
+                                        우리와 함께 새로운 세계를 만들어가요
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="img_wrap">
+                                        <img src="./images/goods.jpg" width="268" height="268" alt="블로그 이미지02">
+                                    </div>
+                                </a>
+                                <time datetime="2022-05-27">MAY 27, 2022</time>
+                                <a href="javascript:void(0)">
+                                    <h3>
+                                        블리자드 인사이드 <br>
+                                        지금 바로 <span>블리자드 기어 스토어</span>에서 블리자드 컬렉션 상품을 만나보세요!
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <div class="img_wrap">
+                                        <img src="./images/sales.jpg" width="268" height="268" alt="블로그 이미지03">
+                                    </div>
+                                </a>
+                                <time datetime="2023-06-20">JUNE 220 2023</time>
+                                <a href="javascript:void(0)">
+                                    <h3>
+                                        블리자드 인사이드 <br>
+                                        BATTLE.NET 여름 할인이 시작되었습니다!
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-4. Blog -->
+
+                <!-- 3-5. Contact -->
+                <section class="contact_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">CONTACT</h2>
+                        <form action="javascript:void(0)" class="form_box">
+                            <fieldset class="cf">
+                                <legend class="blind">CONTACT&nbsp;US</legend>
+                                <!-- Input Form -->
+                                <div class="form">
+                                    <label for="name" class="blind">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <label for="phone" class="blind">Phone</label>
+                                    <input type="tel" id="phone" placeholder="Phone">
+                                    <label for="email" class="blind">E-Mail</label>
+                                    <input type="email" id="email" placeholder="Email Address">
+                                </div>
+                                <!-- /Input Form -->
+                                <!-- Textarea Form -->
+                                <div class="txta">
+                                    <label for="message" class="blind">Message</label>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                            </fieldset>
+                            <!-- /Textarea Form -->
+                            <!-- Button -->
+                            <div class="send_btn">
+                                <button>SEND MESSAGE</button>
+                            </div>
+                            <!-- /Button -->
+                        </form>
+                    </div>
+                </section>
+                <!-- /3-5. Contact -->
+            </section>
+        </main>
+
+        <!-- /3. Contents -->
+
+        <!-- 4.Footer -->
+        <footer class="footer">            
+            <div class="wrapper">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.932680951191!2d127.05865031179303!3d37.50950587193694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47455555555%3A0xecfcdcdf73e07475!2z67iU66as7J6Q65OcIOyXlO2EsO2FjOyduOuovO2KuCDsvZTrpqzslYQ!5e0!3m2!1sko!2skr!4v1687678610188!5m2!1sko!2skr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <span></span>
+                    <select>
+                        <option value="https://www.blizzard.com/ko-kr/">한국어</option>
+                        <option value="https://www.blizzard.com/zh-tw/">繁體中文</option>
+                        <option value="https://www.blizzard.com/en-us/">English</option>
+                        <option value="https://www.blizzard.com/ja-jp/">日本語</option>
+                        <option value="https://www.blizzard.com/es-es/">Español</option>
+                        <option value="https://www.blizzard.com/pt-br/">Português</option>
+                        <option value="https://www.blizzard.com/de-de/">Deutsch</option>
+                        <i class="far fa-caret-down"></i>
+                    </select>
+                    <h2><a href="javascript:void(0)"><img src="./images/footer_logo.png" alt="푸터로고"></a></h2>
+                </div>
+                <div>
+                    <a href="javascript:void(0)">인재 채용</a>
+                    <a href="javascript:void(0)">회사 소개</a>
+                    <a href="javascript:void(0)">고객지원</a>
+                    <a href="javascript:void(0)">문의 등록</a>
+                    <a href="javascript:void(0)">보도 자료</a>
+                    <a href="javascript:void(0)">API</a>
+                    <a href="javascript:void(0)">사이트맵</a>
+                    <a href="javascript:void(0)">BATTLE.NET PC방</a>
+                </div>
+                <div>
+                    <p>한 곳에서 모든 게임을 플레이할 수 있는
+                        <img src="./images/bnet-logo-01.svg" alt="b로고"><span class="uline">Battle.net 앱</span>
+                    </p>
+                </div>
+                <div class="privacy">
+                    <p class="bzd">
+                        &copy;2023 Blizzard Engertainment, Inc.
+                    </p>
+                    <p class="bzd">
+                        여기서 언급된 다른 모든 <span class="u_line">상표</span> 는 각 소유권자들의 자산입니다.
+                    </p>
+                    <div>
+                        <a href="javascript:void(0)">개인정보 처리방침</a>
+                        <a href="javascript:void(0)">법률 관련 문서</a>
+                        <a href="javascript:void(0)">이용 약관</a>
+                        <a href="javascript:void(0)">쿠키정보 처리방침</a>
+                        <a href="javascript:void(0)">쿠키 설정</a>
+                    </div>
+                </div>
+                <div class="bzd2">
+                    <p>블리자드 엔터테인먼트 유한 회사</p>
+                    <p>주소:06164 서울시 강남구 테헤란로 521 파르나스타워 15층</p>
+                    <div>
+                        <a href="javascript:void(0)" class="ready">대표 전화: 1644-0727</a>
+                        <a href="javascript:void(0)" class="ready">팩스 번호:(02)544-3038</a>
+                        <a href="javascript:void(0)" class="ready">이메일: websupport@blizzard.co.kr</a>
+                        <a href="javascript:void(0)" class="ready">사업자정보확인</a>
+                        <a href="javascript:void(0)" class="ready">대표이사: 다니엘 알레그레</a>
+                        <a href="javascript:void(0)" class="ready">개인정보 보호책임자: 이강호</a>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+        <!-- /4.Footer -->
+        <div class="warning">
+            <img src="./images/blizz_logo.png" alt="경고">
+            <p>We are sorry, this page is currently Not Available</p>
+        </div>
+        <div class="screen">
+        </div>
+    </div>
+</body>
+<script src="./js/blizzard.js"></script>
+</html>

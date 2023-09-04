@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Single+Day&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+
+.notosanskr {font-family: 'notosanskr', sans-serif, cursive;}
+.roboto {font-family: 'Roboto',sans-serif, cursive;}
+.rowdies {font-family: 'rowdies',sans-serif, cursive;}
+.rubikbubbles {font-family: 'rubikbubbles',sans-serif, cursive;}
+.seymourone {font-family: 'seymourone',sans-serif, cursive;}
+.opensans {font-family: 'opensans',sans-serif, cursive;}
+.nanumgothic {font-family: 'nanumgothic',sans-serif, cursive;}
+.montserrat {font-family: 'montserrat',sans-serif, cursive;}
+.lato {font-family: 'lato',sans-serif, cursive;}
+.poppins {font-family: 'poppins',sans-serif, cursive;}
+.moondance {font-family: 'moondance',sans-serif, cursive;}
+.robotocondensed {font-family: 'robotocondensed',sans-serif, cursive;}
+.sourcesanspro {font-family: 'sourcesanspro',sans-serif, cursive;}
+.eastseadokdo {font-family: 'eastseadokdo',sans-serif, cursive;}
+.ubuntu {font-family: 'ubuntu',sans-serif, cursive;}
+.nunito {font-family: 'nunito',sans-serif, cursive;}
+.merriweather {font-family: 'merriweather',sans-serif, cursive;}
+.sevillana {font-family: 'sevillana',sans-serif, cursive;}
+.lora {font-family: 'lora',sans-serif, cursive;}
+.passionsconflict {font-family: 'passionsconflict',sans-serif, cursive;}
+.inspiration {font-family: 'inspiration',sans-serif, cursive;}
+.nanumpenscript {font-family: 'nanumpenscript', cursive;}
+.blackhansans {font-family: 'blackhansans', cursive;}
+.nanumgothic {font-family: 'nanumgothic', cursive;}
+.gugi {font-family: 'gugi', cursive;}
+.sunflower {font-family: 'sunflower', cursive;}
+.hahmlet {font-family: 'hahmlet', cursive;}
+.himelody {font-family: 'himelody', cursive;}
+.dokdo {font-family: 'dokdo', cursive;}
+.gaegu {font-family: 'gaegu', cursive;}  여기서 부터 뭔가 잘못됐음
+.blackandwhitepicture {font-family: 'blackandwhitepicture', cursive;}
+.singleday {font-family: 'singleday', cursive;}
+.monoton {font-family: 'monoton', cursive;}
+
+
+

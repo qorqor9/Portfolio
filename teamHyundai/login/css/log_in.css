@@ -1,0 +1,229 @@
+@charset "utf-8";
+body,html{
+    font-family: 'Noto Sans', sans-serif;
+}
+.w400{
+    width: 400px;
+    margin: 0 auto;
+}
+.top_line{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: #002c5f;
+}
+header{
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    width: 128px;
+}
+header .logo img{
+    width: 100%;
+}
+article{
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    height: 348px;
+}
+
+article legend{
+    font-size: 12px;
+    color: #666;
+    line-height: 15px;
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+article legend .logInDot{
+    content: "";
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    width: 4px;
+    height: 4px;
+    margin: 6px 6px 0 0;
+    background: #999;
+}
+article label{
+    display: none;
+}
+article input{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #dedede;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 10px 12px;
+}
+#log_in_pw{
+    margin-bottom: 10px;
+}
+article input::placeholder{
+    color: #bbb;
+}
+button{
+    width: 400px;
+    height: 55px;
+    background: #3387bd;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover{
+    background: #002c5f;
+}
+article div{
+    display: flex;
+    justify-content: space-between;
+}
+article fieldset div:nth-child(3){
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.9;
+    color: #006ca4;
+}
+.findId{
+    width: 184px;
+    display: flex;
+    justify-content: space-between;
+}
+.right_tri{
+    display: inline-block;
+    transform: translateY(2px);
+    font-size: 16px;
+    color: #555;
+}
+article fieldset div:nth-child(4){
+    margin-top: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #dedede;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+article fieldset div:nth-child(4):hover{
+    background: #dedede;
+}
+article fieldset div:nth-child(4) p{
+    padding: 0 12px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 38px;
+}
+.expo{
+    transform: translateY(10px);
+    width: 20px;
+    margin-right: 6px;
+}
+footer{
+    text-align: center;
+}
+footer ul{
+    width: 178px;
+    margin: 25px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #006ca4;
+}
+footer ul .logInDivider{
+    color: #000;
+    font-size: 16px;
+    margin-top: -4px;
+}
+footer p{
+    color: #666;
+    font-size: 12px;
+}
+.bottom_msg{
+    width: 494px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    background: #313131;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    opacity: 1;
+}
+.mousecursor{
+    font-weight: 600;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+/* 커튼 */
+#curtain {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 777;
+    opacity: 0.7;
+}
+/* 준비 경고창 */
+.alert{
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #007fa8;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.problem_alert {
+    width: 176px;
+    height: 124px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    display: none;
+}
+.problem_alert h2 {
+    height: 74px;
+    line-height: 74px;
+    font-size: 13px;
+    color: #686868;
+    background: #fff;
+    border: none;
+    border-radius: 5px 5px 0 0;
+}
+.problem_alert p {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #fff;
+    background: #3387bd;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+}
+.problem_alert p:hover {
+    background: #012a85;
+}

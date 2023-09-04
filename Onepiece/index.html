@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HoRim">
+    <meta name="description" content="포트폴리오, 플렉스 레이아웃">
+    <title>One Piece Portfolio, Flex</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon=precomposed" href="./favicon/apple-touch-icon_180x180.png">
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">    
+    <link rel="stylesheet" href="./css/onepiece.css">
+    <script src="https://kit.fontawesome.com/2181e7fb1a.js" crossorigin="anonymous"></script>
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+</head>
+<body>
+    <div id="wrap">        
+        <!-- Header -->
+        <header>
+            <!-- <div class="tg_menu">
+                <div class="menu_head w1300">
+                    <input type="checkbox" id="menuicon">
+                    <label for="menuicon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav class="slide_gnb">
+                        <ul class="sgnb">
+                            <li><a href="javascript:void(0)">NEWS</a></li>
+                            <li><a href="javascript:void(0)">What is One-Piece</a></li>
+                            <li><a href="javascript:void(0)">Anime Information</a></li>
+                            <li><a href="javascript:void(0)">Comics</a></li>
+                            <li><a href="javascript:void(0)">Goods & Events</a></li>
+                        </ul>                
+                        <ul class="sns">
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>                    
+                    </nav>                                
+                </div>
+            </div> -->
+            <div class="lnb_all">                
+                <!-- Logo Area + LNB Menu -->
+                <div class="root_lnb w1300">
+                    <!-- Logo Area -->                    
+                    <div>              
+                        <a href="./index.html" class="ready no_line"><img src="./images/logo.png" alt="원피스로고"></a>
+                        <nav class="local">                                                        
+                            <ul class="lnb">
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fa fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fa fa-youtube-play"></i></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i></a>
+                                </li>
+                            </ul>
+                        </nav>          
+                    </div>                
+                    
+                    <!-- /Logo Area -->
+                    <!-- LNB Menu -->
+                    
+                    <!-- /LNB Menu -->
+                </div>
+                <!-- /Logo Area + LNB Menu -->
+            </div>
+
+            <!-- GNB Menu -->
+            <div class="gnb_all">
+                <div class="w1300">
+                    <nav class="global">                        
+                        <ul class="gnb">
+                            <li class="gnb_li">
+                                <a href="javascript:void(0)"><img src="./images/icons/nav-news.png" alt="애니">&nbsp;&nbsp;Latest Information</a>                                
+                            </li>                            
+                            <li class="gnb_li"><a href="javascript:void(0)"><img src="./images/icons/nav-log.png" alt="애니">&nbsp;&nbsp;What is One Piece</a>                                                                
+                                <ul class="gnb_sub first">                                    
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/about_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/story_list.jpg" alt="내용"></a></li>                                    
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/news_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/strawhatpirates_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/character_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/devilfruit_list.jpg" alt="내용"></a></li>                                    
+                                </ul>                                
+                            </li>
+                            <li class="gnb_li cf"><a href="javascript:void(0)"><img src="./images/icons/nav-anime.png" alt="애니">&nbsp;&nbsp;Anime Information</a>
+                                <ul class="gnb_sub second">                                
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/anime_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/movie_list.jpg" alt="내용"></a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb_li"><a href="javascript:void(0)"><img src="./images/icons/nav-comics.png" alt="애니">&nbsp;&nbsp;Comics</a>
+                                <ul class="gnb_sub third">
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/comics_list.jpg" alt="내용"></a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb_li"><a href="javascript:void(0)"><img src="./images/icons/nav-product.png" alt="애니">&nbsp;&nbsp;Goods & Events</a>
+                                <ul class="gnb_sub fourth">
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/figure_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/gameapps_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/book_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/bddvd_list.jpg" alt="내용"></a></li>
+                                    <li><a href="javascript:void(0)" class="sub_li"><img src="./images/depth_img/amusement_list.jpg" alt="내용"></a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb_li"><a href="javascript:void(0)"><img src="./images/icons/nav-special.png" alt="애니">&nbsp;&nbsp;Fun</a>
+                            </li>
+                        </ul>                       
+                    </nav>
+                </div>
+            </div>
+            <!-- /GNB Menu -->
+        </header>
+        <!-- /Header -->
+        <a href="#" class="btn_goTop ready"><img src="./images/cookie-01.png" alt="top버튼"></a>
+        <!-- Slider -->
+        <article>
+            <h2 class="slider">
+                <div class="top_banner"><img src="./images/top-banner-btn.png" alt="탑배너"></div>                
+                <div class="rolling-wrapper">
+                    <ul class="banner-row">
+                        <li>
+                            <img src="./images/slide/1.jpg" alt="이미지1" width="160" height="160">
+                            <img src="./images/slide/2.jpg" alt="이미지2" width="160" height="160">
+                            <img src="./images/slide/3.jpg" alt="이미지3" width="160" height="160">
+                            <img src="./images/slide/4.jpg" alt="이미지4" width="160" height="160">
+                            <img src="./images/slide/5.jpg" alt="이미지5" width="160" height="160">
+                            <img src="./images/slide/6.jpg" alt="이미지6" width="160" height="160">
+                            <img src="./images/slide/7.jpg" alt="이미지7" width="160" height="160">
+                            <img src="./images/slide/8.jpg" alt="이미지8" width="160" height="160">
+                            <img src="./images/slide/9.jpg" alt="이미지9" width="160" height="160">
+                            <img src="./images/slide/10.jpg" alt="이미지10" width="160" height="160">
+                            <img src="./images/slide/11.jpg" alt="이미지11" width="160" height="160">
+                            <img src="./images/slide/12.jpg" alt="이미지12" width="160" height="160">
+                            <img src="./images/slide/13.jpg" alt="이미지13" width="160" height="160">
+                            <img src="./images/slide/14.jpg" alt="이미지14" width="160" height="160">
+                            <img src="./images/slide/15.jpg" alt="이미지15" width="160" height="160">
+                            <img src="./images/slide/16.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/43.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/44.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/45.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/46.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/47.jpg" alt="이미지16" width="160" height="160">
+                            <img src="./images/slide/48.jpg" alt="이미지16" width="160" height="160">
+                        </li>
+                    </ul>
+                    <ul class="banner-row"> 
+                        <li>
+                            <img src="./images/slide/17.jpg" alt="이미지17" width="160" height="160">
+                            <img src="./images/slide/18.jpg" alt="이미지18" width="160" height="160">
+                            <img src="./images/slide/19.jpg" alt="이미지19" width="160" height="160">
+                            <img src="./images/slide/20.jpg" alt="이미지20" width="160" height="160">
+                            <img src="./images/slide/21.jpg" alt="이미지21" width="160" height="160">
+                            <img src="./images/slide/22.jpg" alt="이미지22" width="160" height="160">
+                            <img src="./images/slide/23.jpg" alt="이미지23" width="160" height="160">
+                            <img src="./images/slide/25.jpg" alt="이미지25" width="160" height="160">
+                            <img src="./images/slide/26.jpg" alt="이미지26" width="160" height="160">
+                            <img src="./images/slide/24.jpg" alt="이미지24" width="160" height="160">
+                            <img src="./images/slide/27.jpg" alt="이미지27" width="160" height="160">
+                            <img src="./images/slide/28.jpg" alt="이미지28" width="160" height="160">
+                            <img src="./images/slide/33.jpg" alt="이미지33" width="160" height="160">
+                            <img src="./images/slide/49.jpg" alt="이미지33" width="160" height="160">
+                            <img src="./images/slide/1.jpg" alt="이미지33" width="160" height="160">
+                            <img src="./images/slide/2.jpg" alt="이미지33" width="160" height="160">
+                            <img src="./images/slide/3.jpg" alt="이미지33" width="160" height="160">
+                            <img src="./images/slide/4.jpg" alt="이미지33" width="160" height="160">
+                        </li>
+                    </ul>   
+                    <ul class="banner-row">
+                        <li>                          
+                            <img src="./images/slide/34.jpg" alt="이미지34" width="160" height="160">  
+                            <img src="./images/slide/29.jpg" alt="이미지29" width="160" height="160">
+                            <img src="./images/slide/30.jpg" alt="이미지30" width="160" height="160">
+                            <img src="./images/slide/31.jpg" alt="이미지31" width="160" height="160">
+                            <img src="./images/slide/32.jpg" alt="이미지32" width="160" height="160">
+                            <img src="./images/slide/35.jpg" alt="이미지35" width="160" height="160">
+                            <img src="./images/slide/36.jpg" alt="이미지36" width="160" height="160">
+                            <img src="./images/slide/37.jpg" alt="이미지37" width="160" height="160">
+                            <img src="./images/slide/38.jpg" alt="이미지38" width="160" height="160">
+                            <img src="./images/slide/39.jpg" alt="이미지39" width="160" height="160">
+                            <img src="./images/slide/40.jpg" alt="이미지40" width="160" height="160">
+                            <img src="./images/slide/41.jpg" alt="이미지41" width="160" height="160">
+                            <img src="./images/slide/42.jpg" alt="이미지42" width="160" height="160">
+                            <img src="./images/slide/5.jpg" alt="이미지42" width="160" height="160">
+                            <img src="./images/slide/6.jpg" alt="이미지42" width="160" height="160">
+                            <img src="./images/slide/50.jpg" alt="이미지42" width="160" height="160">
+                            <img src="./images/slide/51.jpg" alt="이미지42" width="160" height="160">
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="bot_banner">
+                    <img src="./images/hash-pc.png" alt="아래배너">
+                </div>
+            </h2>
+        </article>
+        <!-- /Slider -->
+
+        <!-- Contents -->
+        <main role="main">
+            <!-- Section 01 -->
+            <section class="md_pick w1300">
+                <h2>
+                    <img src="./images/620x480.jpg" alt="메인" width="620" height="490">
+                </h2>
+                <h3>
+                    <div class="title">ORIGINAL COMICS</div>
+                    <div class="md_pick_area">
+                        <ul>
+                            <li><a href="javascript:void(0)"><img src="./images/108_240x330.jpg" alt="엠디픽제품01" width="240" height="330"></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/102_240x330.jpg" alt="엠디픽제품02" width="240" height="330"></a></li>
+                            <li class="no_mr"><a href="javascript:void(0)"><img src="./images/101_240x330.jpg" alt="엠디픽제품03" width="240" height="330"></a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="more_btn">
+                        <p>
+                            <a href="javascript:void(0)">SEE MORE</a>
+                        </p>
+                    </div>
+                </h3>
+            </section>
+            <!-- /Section 01 -->
+            <!-- Section 02 -->
+            <section class="real_title">
+                <h2 class="real_time w1300">
+                    <ul>
+                        <li>
+                            <div class="title2">MOVIES</div>
+                        </li>
+                        <li><a href="javascript:void(0)" onclick="changeVideo('GOLD')" class="ready">#극장판 골드</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeVideo('NETFLIX')" class="ready">#넷플릭스</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeVideo('RED')" class="ready">#극장판 레드</a></li>
+                        <li><a href="javascript:void(0)" onclick="changeVideo('Z')" class="ready">#극장판 Z</a></li>
+                        <p class="more_btn">
+                            <a href="javascript:void(0)">SEE MORE</a>
+                        </p>
+                    </ul>
+                    <figure>                        
+                        <iframe id="videoFrame"
+                            width="800"
+                            height="450"
+                            src="https://www.youtube.com/embed/ZXEzUwC5vGE"
+                            title="[원피스 필름 골드] 티저 예고편"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen="allowfullscreen">
+                        </iframe>
+                    </figure>
+                </h2>
+            </section>
+            <!-- /Section 02 -->
+            <!-- Section 03 -->
+            <section class="opgs w1300">
+                <h2>
+                    FIGURES & GOODS
+                </h2>
+                <div class="opgs_sns">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>몽키&nbsp;D&nbsp;루피</h3>
+                                    <span>Figuarts&nbsp;ZERO</span>
+                                </div>
+                                <img src="./images/figure/luffy1.jpg" alt="SNS 제품01">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>빈스모크&nbsp;상디</h3>
+                                    <span>Prize&nbsp;giveaway</span>
+                                </div>
+                                <img src="./images/figure/sanji.jpg" alt="SNS 제품02">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="big">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>몽키&nbsp;D&nbsp;루피&nbsp;기어4</h3>
+                                    <span>Figuarts&nbsp;ZERO</span>
+                                </div>
+                                <img src="./images/figure/luffy2.jpg" alt="SNS 제품03">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>저격왕&nbsp;우솝</h3>
+                                    <span>POP&nbsp;series</span>
+                                </div>
+                                <img src="./images/figure/usopp.jpg" alt="SNS 제품04">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>야마토</h3>
+                                    <span>Other&nbsp;megahouse</span>
+                                </div>
+                                <img src="./images/figure/yamato.jpg" alt="SNS 제품05">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>보아&nbsp;핸콕</h3>
+                                    <span>Figuarts&nbsp;ZERO</span>
+                                </div>
+                                <img src="./images/figure/hancock.jpg" alt="SNS 제품06">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>롤로노아&nbsp;조로</h3>
+                                    <span>POP&nbsp;series</span>
+                                </div>
+                                <img src="./images/figure/zoro.jpg" alt="SNS 제품07">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>유스타스&nbsp;키드</h3>
+                                    <span>Figuarts&nbsp;ZERO</span>
+                                </div>
+                                <img src="./images/figure/kiz.jpg" alt="SNS 제품08">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div>
+                                    <h3>나미</h3>
+                                    <span>Figuarts&nbsp;ZERO</span>
+                                </div>
+                                <img src="./images/figure/nami.jpg" alt="SNS 제품09">
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+                <p class="more_btn">
+                    <a href="javascript:void(0)">SEE MORE</a>
+                </p>
+            </section>
+            <!-- /Section 03 -->
+        </main>
+        <!-- /Contents -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer_information w1300">
+                <div class="footer_left">
+                    <nav>
+                        <ul class="footer_gnb">
+                            <li><a href="javascript:void(0)">이용약관&nbsp;&nbsp; </a>|</li>
+                            <li><a href="javascript:void(0)">&nbsp;&nbsp;쇼핑몰&nbsp;이용안내&nbsp;&nbsp;</a>|</li>
+                            <li><a href="javascript:void(0)">&nbsp;&nbsp;개인정보처리방식&nbsp;&nbsp;</a>|</li>
+                            <li><a href="javascript:void(0)">&nbsp;&nbsp;고객센터&nbsp;&nbsp;</a>|</li>
+                            <li><a href="javascript:void(0)">&nbsp;&nbsp;1:1문의&nbsp;&nbsp;</a>|</li>
+                            <li><a href="javascript:void(0)">&nbsp;&nbsp;매장안내&nbsp;&nbsp;</a>|</li>
+                        </ul>
+                    </nav>
+                    <div class="footer_info">
+                        <p>
+                            (C) Eiichiro Oda | 대표이사 : Eiichiro Oda | <br>
+                            사업자등록번호 : 120-21-05435 | 통신판매업신고번호 : 제 2021-서울강동-00810호 <br>
+                            주소 : 서울특별시 강동구 동남로 123 | 대표전화 : 02-3426-3642 | 팩스 : 02-446-7323
+                        </p>
+                        <p class="footer_escrow">
+                            <span>
+                                고객님의 안전거래를 위해 현금 결제시, <br>
+                                구매안전 서비스를 이용하실 수 있습니다 [가입사실확인]
+                            </span>
+                            <img src="./images/logo2.png" alt="안전거래 확인이미지">                            
+                        </p>
+                        <p>
+                            Copyright &copy; 1992 HRL., Ltd. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="footer_contact">
+                    <dl>
+                        <dt>고객만족센터</dt>
+                        <dd>080-555-9812</dd>
+                        <dd>평일 09:00 ~ 18:00 | 점심 13:00 ~ 14:00</dd>
+                    </dl>
+                    <dl>
+                        <dt>BANK INFO</dt>
+                        <dd>기업은행 111-32-423345-32</dd>
+                        <dd>예금주: Eiichiro Oda</dd>
+                    </dl>
+                </div>                
+            </div>
+        </footer>
+        <!-- /Footer -->
+        <div class="warning">
+            <img src="./images/logo.png" alt="경고">
+            <p>We are sorry, this page is currently Not Available</p>
+        </div>
+        <div class="screen">
+        </div>
+    </div>
+</body>
+<script src="./js/onepiece.js"></script>
+</html>
